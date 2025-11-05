@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Mapgenie.io Ad Remover",
+  "version": "0.1.0",
+  "description": "Removes the ad elements for maps on mapgenie.io when a map is loaded.`",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mapgenie.io/*/maps/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
